@@ -15,10 +15,10 @@ router.post(
       year: Joi.string().required(),
       description: Joi.string().required(),
       image: Joi.string().required().regex(urlRegex),
-      trailer: Joi.string().required().regex(urlRegex),
+      trailerLink: Joi.string().required().regex(urlRegex),
       thumbnail: Joi.string().required().regex(urlRegex),
       owner: Joi.string(),
-      movieId: Joi.string().required(),
+      movieId: Joi.number().required(),
       nameRU: Joi.string().required(),
       nameEN: Joi.string().required(),
     }),
@@ -30,7 +30,7 @@ router.delete(
   '/movies/:_id',
   celebrate({
     params: Joi.object().keys({
-      _id: Joi.string().hex(),
+      _id: Joi.string().hex().length(24),
     }),
   }),
   deleteMovie,

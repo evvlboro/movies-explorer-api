@@ -7,7 +7,7 @@ module.exports = (err, req, res, next) => {
     return;
   }
   if (err.name === 'CastError') {
-    res.status(INCORRECT_DATA_ERROR_CODE).send({ message: 'Запрашиваемый пользователь/карточка не найден/а' });
+    res.status(404).send({ message: 'Запрашиваемый пользователь/фильм не найден/а' });
     return;
   }
   if (err.name === 'ValidationError') {

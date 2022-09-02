@@ -7,7 +7,7 @@
 * GET /users/me - возвращает информацию о пользователе (email и имя)
 * PATCH /users/me - обновляет информацию о пользователе (email и имя)
 * GET /movies - возвращает все сохранённые текущим  пользователем фильмы
-* POST /movies - создаёт фильм с переданными в теле country, director, duration, year, description, image, trailer, nameRU, nameEN и thumbnail, movieId
+* POST /movies - создаёт фильм с переданными в теле country, director, duration, year, description, image, trailerLink, nameRU, nameEN и thumbnail, movieId
 * DELETE /movies/_id - удаляет сохранённый фильм по id
 
 ##
