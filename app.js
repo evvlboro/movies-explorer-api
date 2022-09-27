@@ -16,7 +16,16 @@ const originDev = [
   'http://localhost:3000', // dev
 ];
 
-app.use(cors(originDev));
+const originProd = [
+  'https://movies.explorer.evvlboro.nomoredomains.sbs',
+];
+
+const corsOptions = {
+  origin: process.env.NODE_ENV === 'production' ? originProd : originDev,
+  optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
+};
+
+app.use(cors(corsOptions));
 
 app.use(bodyParser.json()); // для собирания JSON-формата
 app.use(bodyParser.urlencoded({ extended: true })); // для приёма веб-страниц внутри POST-запроса
