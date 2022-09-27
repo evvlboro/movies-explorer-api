@@ -17,7 +17,7 @@ const originDev = [
 ];
 
 const originProd = [
-  'https://movies.explorer.evvlboro.nomoredomains.sbs/',
+  'https://movies.explorer.evvlboro.nomoredomains.sbs',
 ];
 
 const corsOptions = {
