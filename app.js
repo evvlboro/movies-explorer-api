@@ -17,6 +17,8 @@ const originDev = [
 ];
 
 const originProd = [
+  'http://localhost',
+  'http://localhost:3000',
   'https://movies.explorer.evvlboro.nomoredomains.sbs',
 ];
 
@@ -24,6 +26,8 @@ const corsOptions = {
   origin: process.env.NODE_ENV === 'production' ? originProd : originDev,
   optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
 };
+
+console.log(corsOptions.origin);
 
 app.use(cors(corsOptions));
 
