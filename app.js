@@ -17,8 +17,6 @@ const originDev = [
 ];
 
 const originProd = [
-  'http://localhost',
-  'http://localhost:3000',
   'https://movies.explorer.evvlboro.nomoredomains.sbs',
 ];
 
