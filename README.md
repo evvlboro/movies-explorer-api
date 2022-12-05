@@ -13,4 +13,6 @@
 ##
 Cсылка на проект: https://api.movies.explorer.evvlboro.nomoredomains.sbs
 
+Ссылка на frondend часть: https://github.com/evvlboro/movies-explorer-frontend
+
 IP-адрес сервера: 158.160.2.31
